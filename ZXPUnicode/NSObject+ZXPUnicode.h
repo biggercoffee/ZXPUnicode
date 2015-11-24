@@ -1,7 +1,8 @@
 //
 //  NSObject+ZHUnicode.h
 //  House
-//
+//  blog : http://blog.csdn.net/biggercoffee
+//  github : https://github.com/biggercoffee/ZXPUnicode
 //  Created by coffee on 15/9/28.
 //  Copyright © 2015年 cylkj. All rights reserved.
 //

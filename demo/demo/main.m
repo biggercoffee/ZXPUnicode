@@ -2,6 +2,9 @@
 //  main.m
 //  demo
 //
+//  blog : http://blog.csdn.net/biggercoffee
+//  github : https://github.com/biggercoffee/ZXPUnicode
+
 //  Created by coffee on 15/11/23.
 //  Copyright © 2015年 coffee. All rights reserved.
 //
