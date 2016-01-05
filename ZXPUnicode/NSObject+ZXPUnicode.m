@@ -11,7 +11,7 @@
 
 #import "NSObject+ZXPUnicode.h"
 
-@implementation NSObject (ZHUnicode)
+@implementation NSObject (ZXPUnicode)
 
 + (NSString *)stringByReplaceUnicode:(NSString *)string
 {
