@@ -50,8 +50,10 @@ static inline void zxp_swizzleSelector(Class class, SEL originalSelector, SEL sw
 }
 
 /**
- *  我觉得 可以把以下的方法放到一个NSObject的category中，然后在需要的类中进行swizzle
- *  这样可以保证代码复用，并且其他的数据结构：NSSet，应该也能享受这个效果
+ *  我觉得 
+ *  可以把以下的方法放到一个NSObject的category中
+ *  然后在需要的类中进行swizzle
+ *  但是又觉得这样太粗暴了。。。。
  */
 
 - (NSString *)zxp_description {
@@ -69,6 +71,32 @@ static inline void zxp_swizzleSelector(Class class, SEL originalSelector, SEL sw
 @end
 
 @implementation NSDictionary (ZXPUnicode)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        zxp_swizzleSelector(class, @selector(description), @selector(zxp_description));
+        zxp_swizzleSelector(class, @selector(descriptionWithLocale:), @selector(zxp_descriptionWithLocale:));
+        zxp_swizzleSelector(class, @selector(descriptionWithLocale:indent:), @selector(zxp_descriptionWithLocale:indent:));
+    });
+}
+
+- (NSString *)zxp_description {
+    return [[self zxp_description] stringByReplaceUnicode];
+}
+
+- (NSString *)zxp_descriptionWithLocale:(nullable id)locale {
+    return [[self zxp_descriptionWithLocale:locale] stringByReplaceUnicode];
+}
+
+- (NSString *)zxp_descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
+    return [[self zxp_descriptionWithLocale:locale indent:level] stringByReplaceUnicode];
+}
+
+@end
+
+@implementation NSSet (ZXPUnicode)
 
 + (void)load {
     static dispatch_once_t onceToken;
