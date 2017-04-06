@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D61351F1C031B0D00CAE85F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D61351E1C031B0D00CAE85F /* main.m */; };
-		1D6135361C031BF200CAE85F /* NSArray+ ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6135301C031BF200CAE85F /* NSArray+ ZXPUnicode.m */; };
-		1D6135371C031BF200CAE85F /* NSDictionary+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6135331C031BF200CAE85F /* NSDictionary+ZXPUnicode.m */; };
-		1D6135381C031BF200CAE85F /* NSObject+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6135351C031BF200CAE85F /* NSObject+ZXPUnicode.m */; };
+		DBFC175A1E8E5FE900A3DFF1 /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFC17591E8E5FE900A3DFF1 /* ZXPUnicode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +26,8 @@
 /* Begin PBXFileReference section */
 		1D61351B1C031B0D00CAE85F /* demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D61351E1C031B0D00CAE85F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1D6135301C031BF200CAE85F /* NSArray+ ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ ZXPUnicode.m"; sourceTree = "<group>"; };
-		1D6135311C031BF200CAE85F /* NSArray+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZXPUnicode.h"; sourceTree = "<group>"; };
-		1D6135321C031BF200CAE85F /* NSDictionary+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXPUnicode.h"; sourceTree = "<group>"; };
-		1D6135331C031BF200CAE85F /* NSDictionary+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXPUnicode.m"; sourceTree = "<group>"; };
-		1D6135341C031BF200CAE85F /* NSObject+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXPUnicode.h"; sourceTree = "<group>"; };
-		1D6135351C031BF200CAE85F /* NSObject+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXPUnicode.m"; sourceTree = "<group>"; };
+		DBFC17581E8E5FE900A3DFF1 /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
+		DBFC17591E8E5FE900A3DFF1 /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +69,8 @@
 		1D61352F1C031BF200CAE85F /* ZXPUnicode */ = {
 			isa = PBXGroup;
 			children = (
-				1D6135311C031BF200CAE85F /* NSArray+ZXPUnicode.h */,
-				1D6135301C031BF200CAE85F /* NSArray+ ZXPUnicode.m */,
-				1D6135321C031BF200CAE85F /* NSDictionary+ZXPUnicode.h */,
-				1D6135331C031BF200CAE85F /* NSDictionary+ZXPUnicode.m */,
-				1D6135341C031BF200CAE85F /* NSObject+ZXPUnicode.h */,
-				1D6135351C031BF200CAE85F /* NSObject+ZXPUnicode.m */,
+				DBFC17581E8E5FE900A3DFF1 /* ZXPUnicode.h */,
+				DBFC17591E8E5FE900A3DFF1 /* ZXPUnicode.m */,
 			);
 			name = ZXPUnicode;
 			path = ../../ZXPUnicode;
@@ -142,10 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6135381C031BF200CAE85F /* NSObject+ZXPUnicode.m in Sources */,
-				1D6135361C031BF200CAE85F /* NSArray+ ZXPUnicode.m in Sources */,
 				1D61351F1C031B0D00CAE85F /* main.m in Sources */,
-				1D6135371C031BF200CAE85F /* NSDictionary+ZXPUnicode.m in Sources */,
+				DBFC175A1E8E5FE900A3DFF1 /* ZXPUnicode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +252,7 @@
 				1D6135241C031B0D00CAE85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
